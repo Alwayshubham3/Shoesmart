@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+    <form class="form-container">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="Reg.css">
+    <script>
+        function validateLoginForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            var isValid = true;
+
+            if (username === '') {
+                document.getElementById('username').style.backgroundColor = 'red';
+                document.getElementById('usernameError').textContent = 'Please enter your username';
+                isValid = false;
+            } else {
+                document.getElementById('username').style.backgroundColor = '';
+                document.getElementById('usernameError').textContent = '';
+            }
+
+            if (password === '') {
+                document.getElementById('password').style.backgroundColor = 'red';
+                document.getElementById('passwordError').textContent = 'Please enter your password';
+                isValid = false;
+            } else {
+                document.getElementById('password').style.backgroundColor = '';
+                document.getElementById('passwordError').textContent = '';
+            }
+
+            if (isValid) {
+                // Trigger modal on successful login
+                document.getElementById("loginModal").style.display = "block";
+            }
+
+            return isValid;
+        }
+
+        function closeModal() {
+            document.getElementById("loginModal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Login Form</h2>
+    <form id="loginForm" onsubmit="return validateLoginForm();">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <div class="error" id="usernameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <div class="error" id="passwordError"></div>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<!-- Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-header">
+      <h2>Success</h2>
+    </div>
+    <div class="modal-body">
+      <p>Login successful!</p>
+    </div>
+    <div class="modal-footer">
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

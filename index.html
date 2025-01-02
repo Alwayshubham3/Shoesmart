@@ -1,61 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shoe Shop Landing Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="bg-dark text-white p-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1>ShoeShop</h1>
-      <div>
-        <i class="bi bi-person-circle user-icon"></i>
-        <a href="#" class="btn btn-primary btn-sm">Login</a>
-        <a href="#" class="btn btn-success btn-sm">Signup</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container mt-4">
-    <div class="row">
-      <!-- Main Content Area -->
-      <div class="col-md-8">
-        <h2>Welcome to ShoeShop</h2>
-        <p>Discover the best shoes for every occasion!</p>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="shoe1.jpg" class="card-img-top" alt="Shoe 1">
-              <div class="card-body">
-                <h5 class="card-title">Shoe 1</h5>
-                <p class="card-text">$50.00</p>
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
+    <header>
+        <div class="header-container">
+            <h1>Welcome by SHOOESROOM</h1>
+            <div class="header-actions">
+                <input type="text" placeholder="Search..." class="search-box">
+                <div class="user-profile">
+                    <img src="img/logo.png" alt="User" class="user-icon">
+                    <span class="user-name">Hello, User</span>
+                </div>
             </div>
-          </div>
-          <!-- Repeat for more shoes -->
         </div>
-      </div>
+    </header>
+    
 
-      <!-- Advertisement Area -->
-      <div class="col-md-4">
-        <h3>Special Offers</h3>
-        <div class="ad-container">
-          <img src="ad.jpg" alt="Advertisement" class="img-fluid">
-          <p>Up to 50% off on selected items!</p>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="product.html">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    
+    <section class="hero">
+        <div class="slider">
+            <img src="img/HomePageSlider/free-photo-of-a-person-s-feet-are-up-in-the-air-with-their-shoes-on.jpeg" alt="Slider Image 1">
+            <img src="img/HomePageSlider/pexels-ashutoshsonwani-2016145.jpg" alt="Slider Image 2">
+            <img src="img/HomePageSlider/pexels-conojeghuo-375878.jpg" alt="Slider Image 3">
+            <img src="img/HomePageSlider/pexels-goumbik-292999.jpg" alt="Slider Image 1">
+            <img src="img/HomePageSlider/pexels-hikaique-48262.jpg" alt="Slider Image 2">
+            <img src="img/HomePageSlider/pexels-justus-menke-3490295-5214139.jpg" alt="Slider Image 3">
+
         </div>
-      </div>
-    </div>
-  </main>
+        <aside class="ads">
+            <h2>Sponsored Ads</h2>
+            <p>Ad content goes here.</p>
+        </aside>
+    </section>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 ShoeShop. All rights reserved.</p>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img class="product-img-size" src="img/Sneekers/pexels-photo-1598505.jpeg" alt="Sneakers">
+                <h3>Stylish Sneakers</h3>
+                <p>Price: ₹1400</p>
+                <p>Comfortable and trendy sneakers perfect for casual outings.</p>
+            </div>
+            <div class="product-item">
+                <img  class="product-img-size" src="img/Formal/pexels-photo-186035.jpeg" alt="Formal Shoes">
+                <h3>Classic Formal Shoes</h3>
+                <p>Price: ₹2100</p>
+                <p>Elegant formal shoes ideal for office and events.</p>
+            </div>
+            <div class="product-item">
+                <img class="product-img-size" src="img/Casual/pexels-photo-914929.jpeg" alt="Sports Shoes">
+                <h3>Durable Sports Shoes</h3>
+                <p>Price: ₹1999 </p>
+                <p>High-performance sports shoes for all your fitness needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <p>
+                Address: SHOESROOM Pvt Ltd, Sector 62, <Noida-201310></Noida-201310>, India<br>
+                Contact: +91 7518865252 | email: pandeyshubham2k24@gmail.com
+            </p>
+            <p>
+                Copyright &copy; 2024 SHOESROOM Pvt Ltd. - Designed by 
+                <a rel="nofollow" href="https://www.linkedin.com/in/shubhampandey03/" class="tm-text-link" target="_parent">SHOESROOM</a><br>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
